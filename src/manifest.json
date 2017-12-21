@@ -1,0 +1,23 @@
+{
+  "name": "React Chrome Sidebar",
+  "version": "0.1.0",
+  "description": "Example chrome sidebar extension for React App.",
+  "web_accessible_resources": ["Frame.js"],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "React Chrome Sidebar"
+  },
+  "manifest_version": 2,
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking"
+  ]
+}
